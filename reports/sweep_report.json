@@ -1,0 +1,2140 @@
+{
+  "meta": {
+    "elapsed_seconds": 116.38,
+    "loadout_count": 50,
+    "seeds_per_loadout": 2000,
+    "total_runs": 100000,
+    "workers": 8
+  },
+  "overall": {
+    "clear_rate_by_depth": {
+      "1": 0.50434,
+      "2": 0.21393,
+      "3": 0.05579,
+      "4": 0.00749,
+      "5": 0.00059
+    },
+    "damage_taken_share": {
+      "drone.brute": 0.354212400213199,
+      "drone.ranged": 0.244991355662959,
+      "drone.shielded": 0.0571317515148931,
+      "drone.swarm": 0.34366449260895
+    },
+    "first_choke": {
+      "chamber": 0.98,
+      "none": 0.02
+    },
+    "runs": 100000,
+    "ttk_by_archetype": {
+      "drone.brute": {
+        "p10": 89,
+        "p50": 179,
+        "p90": 499
+      },
+      "drone.ranged": {
+        "p10": 29,
+        "p50": 119,
+        "p90": 350
+      },
+      "drone.shielded": {
+        "p10": 89,
+        "p50": 149,
+        "p90": 299
+      },
+      "drone.swarm": {
+        "p10": 29,
+        "p50": 119,
+        "p90": 288
+      }
+    },
+    "win_rate": 0.0
+  },
+  "per_loadout": [
+    {
+      "clear_rate_by_depth": {
+        "1": 0.2
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.337357677229919,
+        "drone.ranged": 0.306921298827057,
+        "drone.shielded": 0.00307682696362472,
+        "drone.swarm": 0.352644196979399
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_004",
+      "modules": [
+        "feed.overdrive",
+        "chamber.burst",
+        "cooling.passive",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 191,
+          "p50": 330,
+          "p90": 522
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 179,
+          "p90": 377
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.8645,
+        "2": 0.1695
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.346074255361437,
+        "drone.ranged": 0.199005459838426,
+        "drone.shielded": 0.0758999380360949,
+        "drone.swarm": 0.379020346764042
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_005",
+      "modules": [
+        "feed.light",
+        "chamber.heavy",
+        "cooling.fan",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 239,
+          "p50": 269,
+          "p90": 390
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 150,
+          "p90": 209
+        },
+        "drone.shielded": {
+          "p10": 239,
+          "p50": 269,
+          "p90": 419
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 150,
+          "p90": 209
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.146
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.297288083790805,
+        "drone.ranged": 0.369797850372443,
+        "drone.shielded": 0.00228833848601331,
+        "drone.swarm": 0.330625727350739
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_006",
+      "modules": [
+        "feed.standard",
+        "chamber.burst",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 329,
+          "p50": 456,
+          "p90": 630
+        },
+        "drone.swarm": {
+          "p10": 144,
+          "p50": 173,
+          "p90": 305
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.997,
+        "2": 0.698,
+        "3": 0.0305
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.318517281942379,
+        "drone.ranged": 0.192405495746969,
+        "drone.shielded": 0.102228037005835,
+        "drone.swarm": 0.386849185304817
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_007",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 149,
+          "p90": 269
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 89,
+          "p90": 209
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 149,
+          "p90": 239
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 89,
+          "p90": 210
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.539,
+        "2": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.364029080181224,
+        "drone.ranged": 0.242217773563259,
+        "drone.shielded": 0.0285182453552488,
+        "drone.swarm": 0.365234900900268
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_008",
+      "modules": [
+        "feed.overdrive",
+        "chamber.rapid",
+        "cooling.fan",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 419,
+          "p50": 550,
+          "p90": 640
+        },
+        "drone.ranged": {
+          "p10": 79,
+          "p50": 200,
+          "p90": 299
+        },
+        "drone.swarm": {
+          "p10": 49,
+          "p50": 170,
+          "p90": 289
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {},
+      "damage_taken_share": {
+        "drone.brute": 0.261886561687815,
+        "drone.ranged": 0.327755106840874,
+        "drone.swarm": 0.410358331471311
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_009",
+      "modules": [
+        "feed.standard",
+        "chamber.burst",
+        "cooling.fan",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 347,
+          "p50": 600,
+          "p90": 798
+        },
+        "drone.swarm": {
+          "p10": 144,
+          "p50": 300,
+          "p90": 606
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.587
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.357137283056561,
+        "drone.ranged": 0.251006679985017,
+        "drone.shielded": 0.033384317642652,
+        "drone.swarm": 0.35847171931577
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_010",
+      "modules": [
+        "feed.standard",
+        "chamber.single",
+        "cooling.passive",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 399,
+          "p50": 499,
+          "p90": 640
+        },
+        "drone.ranged": {
+          "p10": 119,
+          "p50": 200,
+          "p90": 339
+        },
+        "drone.shielded": {
+          "p10": 579,
+          "p50": 619,
+          "p90": 679
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 160,
+          "p90": 240
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.0955
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.309476645373029,
+        "drone.ranged": 0.301900798999785,
+        "drone.shielded": 0.00128152532770712,
+        "drone.swarm": 0.387341030299478
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_011",
+      "modules": [
+        "feed.light",
+        "chamber.single",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 640,
+          "p50": 880,
+          "p90": 940
+        },
+        "drone.ranged": {
+          "p10": 180,
+          "p50": 360,
+          "p90": 640
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 199,
+          "p90": 440
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.7045,
+        "2": 0.213
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.432952874448568,
+        "drone.ranged": 0.207988080511013,
+        "drone.shielded": 0.102902846828342,
+        "drone.swarm": 0.256156198212077
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_012",
+      "modules": [
+        "feed.standard",
+        "chamber.single",
+        "cooling.fan",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 399,
+          "p50": 439,
+          "p90": 520
+        },
+        "drone.ranged": {
+          "p10": 99,
+          "p50": 159,
+          "p90": 200
+        },
+        "drone.shielded": {
+          "p10": 499,
+          "p50": 559,
+          "p90": 679
+        },
+        "drone.swarm": {
+          "p10": 39,
+          "p50": 59,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 1.0,
+        "2": 0.988,
+        "3": 0.4665,
+        "4": 0.0175
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.435071945219845,
+        "drone.ranged": 0.113026480159159,
+        "drone.shielded": 0.188538116315294,
+        "drone.swarm": 0.263363458305702
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_013",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.heavy",
+        "cooling.passive",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 210
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        },
+        "drone.shielded": {
+          "p10": 119,
+          "p50": 149,
+          "p90": 209
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.523
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.381288521102525,
+        "drone.ranged": 0.242604730469605,
+        "drone.shielded": 0.028877139192191,
+        "drone.swarm": 0.347229609235679
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_014",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.passive",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 839,
+          "p50": 850,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 169,
+          "p50": 179,
+          "p90": 349
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 159,
+          "p90": 320
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.9995,
+        "2": 0.942,
+        "3": 0.185
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.343138659839732,
+        "drone.ranged": 0.171557710704783,
+        "drone.shielded": 0.131498530169292,
+        "drone.swarm": 0.353805099286193
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_015",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.liquid",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 210
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 209
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.131
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.314575876459463,
+        "drone.ranged": 0.318581096922428,
+        "drone.shielded": 0.00153175260632395,
+        "drone.swarm": 0.365311274011785
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_016",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.burst",
+        "cooling.passive",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 191,
+          "p50": 342,
+          "p90": 660
+        },
+        "drone.swarm": {
+          "p10": 144,
+          "p50": 174,
+          "p90": 486
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.999,
+        "2": 0.793,
+        "3": 0.0925
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.389691080829978,
+        "drone.ranged": 0.125212914214927,
+        "drone.shielded": 0.141545370083617,
+        "drone.swarm": 0.343550634871477
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_017",
+      "modules": [
+        "feed.standard",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 149,
+          "p50": 179,
+          "p90": 240
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        },
+        "drone.shielded": {
+          "p10": 149,
+          "p50": 179,
+          "p90": 239
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.25377171623854,
+        "drone.ranged": 0.377543510769062,
+        "drone.swarm": 0.368684772992398
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_018",
+      "modules": [
+        "feed.light",
+        "chamber.burst",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 582,
+          "p50": 600,
+          "p90": 912
+        },
+        "drone.swarm": {
+          "p10": 282,
+          "p50": 288,
+          "p90": 438
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.995,
+        "2": 0.7545,
+        "3": 0.115,
+        "4": 0.001
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.522027276849559,
+        "drone.ranged": 0.134388286224765,
+        "drone.shielded": 0.237593064130439,
+        "drone.swarm": 0.105991372795238
+      },
+      "first_choke": {
+        "none": 1.0
+      },
+      "id": "mixed_019",
+      "modules": [
+        "feed.overdrive",
+        "chamber.single",
+        "cooling.fan",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 219,
+          "p50": 259,
+          "p90": 299
+        },
+        "drone.ranged": {
+          "p10": 59,
+          "p50": 79,
+          "p90": 119
+        },
+        "drone.shielded": {
+          "p10": 279,
+          "p50": 319,
+          "p90": 379
+        },
+        "drone.swarm": {
+          "p10": 19,
+          "p50": 39,
+          "p90": 80
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {},
+      "damage_taken_share": {
+        "drone.brute": 0.222440797730662,
+        "drone.ranged": 0.340774517942645,
+        "drone.swarm": 0.436784684326693
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_020",
+      "modules": [
+        "feed.light",
+        "chamber.burst",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 438,
+          "p50": 600,
+          "p90": 912
+        },
+        "drone.swarm": {
+          "p10": 282,
+          "p50": 432,
+          "p90": 600
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.818,
+        "2": 0.035
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.290341849642377,
+        "drone.ranged": 0.223650716806696,
+        "drone.shielded": 0.0494581003841709,
+        "drone.swarm": 0.436549333166755
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_021",
+      "modules": [
+        "feed.standard",
+        "chamber.heavy",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 179,
+          "p50": 269,
+          "p90": 389
+        },
+        "drone.ranged": {
+          "p10": 59,
+          "p50": 150,
+          "p90": 299
+        },
+        "drone.shielded": {
+          "p10": 179,
+          "p50": 269,
+          "p90": 389
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 150,
+          "p90": 269
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.7165,
+        "2": 0.0565
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.380953682197021,
+        "drone.ranged": 0.240938457634728,
+        "drone.shielded": 0.0634747135635235,
+        "drone.swarm": 0.314633146604727
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_022",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.single",
+        "cooling.fan",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 299,
+          "p50": 379,
+          "p90": 479
+        },
+        "drone.ranged": {
+          "p10": 79,
+          "p50": 179,
+          "p90": 240
+        },
+        "drone.shielded": {
+          "p10": 419,
+          "p50": 499,
+          "p90": 599
+        },
+        "drone.swarm": {
+          "p10": 39,
+          "p50": 119,
+          "p90": 220
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.0195
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.292784681070481,
+        "drone.ranged": 0.337425829208936,
+        "drone.shielded": 0.00018750219729137,
+        "drone.swarm": 0.369601987523291
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_023",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.burst",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 318,
+          "p50": 486,
+          "p90": 672
+        },
+        "drone.swarm": {
+          "p10": 144,
+          "p50": 179,
+          "p90": 498
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 1.0,
+        "2": 1.0,
+        "3": 0.856,
+        "4": 0.318,
+        "5": 0.0285
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.493060023899255,
+        "drone.ranged": 0.0785343321996507,
+        "drone.shielded": 0.195836014339553,
+        "drone.swarm": 0.232569629561541
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_024",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.liquid",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 89,
+          "p90": 179
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 29,
+          "p90": 119
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 89,
+          "p90": 179
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 29,
+          "p90": 150
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.392
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.349362054291082,
+        "drone.ranged": 0.329484348463871,
+        "drone.shielded": 0.00958585498060473,
+        "drone.swarm": 0.311567742264443
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_025",
+      "modules": [
+        "feed.standard",
+        "chamber.burst",
+        "cooling.passive",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 300,
+          "p50": 329,
+          "p90": 473
+        },
+        "drone.swarm": {
+          "p10": 144,
+          "p50": 149,
+          "p90": 299
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {},
+      "damage_taken_share": {
+        "drone.brute": 0.260091000773976,
+        "drone.ranged": 0.301029622159158,
+        "drone.swarm": 0.438879377066867
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_026",
+      "modules": [
+        "feed.light",
+        "chamber.rapid",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 320,
+          "p50": 520,
+          "p90": 840
+        },
+        "drone.swarm": {
+          "p10": 170,
+          "p50": 350,
+          "p90": 690
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.9925,
+        "2": 0.7665,
+        "3": 0.1165,
+        "4": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.403424575223194,
+        "drone.ranged": 0.135622327579189,
+        "drone.shielded": 0.164568788063219,
+        "drone.swarm": 0.296384309134397
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_027",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 119,
+          "p50": 179,
+          "p90": 300
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        },
+        "drone.shielded": {
+          "p10": 119,
+          "p50": 179,
+          "p90": 299
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 179
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.644,
+        "2": 0.1325
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.450890839087806,
+        "drone.ranged": 0.192021417548673,
+        "drone.shielded": 0.084329649431827,
+        "drone.swarm": 0.272758093931695
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_028",
+      "modules": [
+        "feed.overdrive",
+        "chamber.rapid",
+        "cooling.cryo",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 379,
+          "p50": 490,
+          "p90": 550
+        },
+        "drone.ranged": {
+          "p10": 39,
+          "p50": 160,
+          "p90": 219
+        },
+        "drone.swarm": {
+          "p10": 19,
+          "p50": 109,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.389,
+        "2": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.350551690210134,
+        "drone.ranged": 0.286113648964166,
+        "drone.shielded": 0.0131343656538681,
+        "drone.swarm": 0.350200295171832
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_029",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.fan",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 709,
+          "p50": 860,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 170,
+          "p50": 320,
+          "p90": 500
+        },
+        "drone.swarm": {
+          "p10": 150,
+          "p50": 170,
+          "p90": 339
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.675,
+        "2": 0.197,
+        "3": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.458320511971581,
+        "drone.ranged": 0.216099994936374,
+        "drone.shielded": 0.108829016916407,
+        "drone.swarm": 0.216750476175638
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_030",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.single",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 339,
+          "p50": 459,
+          "p90": 600
+        },
+        "drone.ranged": {
+          "p10": 59,
+          "p50": 139,
+          "p90": 220
+        },
+        "drone.shielded": {
+          "p10": 479,
+          "p50": 599,
+          "p90": 759
+        },
+        "drone.swarm": {
+          "p10": 19,
+          "p50": 79,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.5825,
+        "2": 0.1025
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.412970295098594,
+        "drone.ranged": 0.246728169920618,
+        "drone.shielded": 0.0737883013789472,
+        "drone.swarm": 0.266513233601841
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_031",
+      "modules": [
+        "feed.standard",
+        "chamber.single",
+        "cooling.passive",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 459,
+          "p50": 580,
+          "p90": 800
+        },
+        "drone.ranged": {
+          "p10": 99,
+          "p50": 180,
+          "p90": 300
+        },
+        "drone.shielded": {
+          "p10": 559,
+          "p50": 679,
+          "p90": 859
+        },
+        "drone.swarm": {
+          "p10": 39,
+          "p50": 119,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.095
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.307547059168475,
+        "drone.ranged": 0.303700228698763,
+        "drone.shielded": 0.00117281416759514,
+        "drone.swarm": 0.387579897965167
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_032",
+      "modules": [
+        "feed.light",
+        "chamber.single",
+        "cooling.fan",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 700,
+          "p50": 880,
+          "p90": 940
+        },
+        "drone.ranged": {
+          "p10": 180,
+          "p50": 360,
+          "p90": 640
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 199,
+          "p90": 440
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 1.0,
+        "2": 0.955,
+        "3": 0.194,
+        "4": 0.001
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.332655101850991,
+        "drone.ranged": 0.1722514184727,
+        "drone.shielded": 0.135103711282671,
+        "drone.swarm": 0.359989768393638
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_033",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.fan",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 210
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 149,
+          "p90": 209
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.321,
+        "2": 0.001
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.296477288707636,
+        "drone.ranged": 0.249828122314411,
+        "drone.shielded": 0.012828325442585,
+        "drone.swarm": 0.440866263535368
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_034",
+      "modules": [
+        "feed.light",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 269,
+          "p50": 390,
+          "p90": 630
+        },
+        "drone.ranged": {
+          "p10": 59,
+          "p50": 209,
+          "p90": 449
+        },
+        "drone.shielded": {
+          "p10": 269,
+          "p50": 299,
+          "p90": 449
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 209,
+          "p90": 390
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.1715
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.322513550743584,
+        "drone.ranged": 0.266254063271924,
+        "drone.shielded": 0.00343402573177918,
+        "drone.swarm": 0.407798360252713
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_035",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.rapid",
+        "cooling.liquid",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 710,
+          "p50": 770,
+          "p90": 940
+        },
+        "drone.ranged": {
+          "p10": 160,
+          "p50": 330,
+          "p90": 520
+        },
+        "drone.swarm": {
+          "p10": 49,
+          "p50": 209,
+          "p90": 500
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.0825
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.330671768541476,
+        "drone.ranged": 0.261230306698163,
+        "drone.shielded": 0.00163988833141362,
+        "drone.swarm": 0.406458036428948
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_036",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.cryo",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 840,
+          "p50": 850,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 169,
+          "p50": 330,
+          "p90": 520
+        },
+        "drone.swarm": {
+          "p10": 150,
+          "p50": 320,
+          "p90": 510
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.5055
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.400355997183319,
+        "drone.ranged": 0.233901885611455,
+        "drone.shielded": 0.0243955871997496,
+        "drone.swarm": 0.341346530005477
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_037",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.cryo",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 839,
+          "p50": 850,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 169,
+          "p50": 179,
+          "p90": 339
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 159,
+          "p90": 320
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 1.0,
+        "2": 0.953,
+        "3": 0.4275,
+        "4": 0.0355,
+        "5": 0.001
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.456809332527123,
+        "drone.ranged": 0.108453269966224,
+        "drone.shielded": 0.176390616635407,
+        "drone.swarm": 0.258346780871246
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_038",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 149,
+          "p90": 240
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 209
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.213
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.326668825317068,
+        "drone.ranged": 0.313947092258898,
+        "drone.shielded": 0.00310533563762762,
+        "drone.swarm": 0.356278746786407
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_039",
+      "modules": [
+        "feed.light",
+        "chamber.rapid",
+        "cooling.passive",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 189,
+          "p50": 320,
+          "p90": 500
+        },
+        "drone.swarm": {
+          "p10": 169,
+          "p50": 170,
+          "p90": 350
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.5465,
+        "2": 0.0025
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.305856807557574,
+        "drone.ranged": 0.242578916742495,
+        "drone.shielded": 0.0232757038361953,
+        "drone.swarm": 0.428288571863736
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_040",
+      "modules": [
+        "feed.light",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 239,
+          "p50": 360,
+          "p90": 479
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 180,
+          "p90": 360
+        },
+        "drone.shielded": {
+          "p10": 239,
+          "p50": 299,
+          "p90": 509
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 180,
+          "p90": 360
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.026
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.301905873808585,
+        "drone.ranged": 0.279985006032729,
+        "drone.shielded": 0.00042170532949633,
+        "drone.swarm": 0.41768741482919
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_041",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.fan",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 840,
+          "p50": 860,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 170,
+          "p50": 350,
+          "p90": 680
+        },
+        "drone.swarm": {
+          "p10": 150,
+          "p50": 329,
+          "p90": 520
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {},
+      "damage_taken_share": {
+        "drone.brute": 0.265758112048093,
+        "drone.ranged": 0.35147957321739,
+        "drone.swarm": 0.382762314734517
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_042",
+      "modules": [
+        "feed.light",
+        "chamber.burst",
+        "cooling.passive",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 438,
+          "p50": 582,
+          "p90": 744
+        },
+        "drone.swarm": {
+          "p10": 161,
+          "p50": 282,
+          "p90": 432
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.585
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.357565659836977,
+        "drone.ranged": 0.25169441593863,
+        "drone.shielded": 0.0373181209834441,
+        "drone.swarm": 0.353421803240948
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_043",
+      "modules": [
+        "feed.standard",
+        "chamber.single",
+        "cooling.fan",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 399,
+          "p50": 499,
+          "p90": 640
+        },
+        "drone.ranged": {
+          "p10": 119,
+          "p50": 200,
+          "p90": 339
+        },
+        "drone.shielded": {
+          "p10": 559,
+          "p50": 619,
+          "p90": 679
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 160,
+          "p90": 240
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.586
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.352578044161574,
+        "drone.ranged": 0.256066847582046,
+        "drone.shielded": 0.0392807637492435,
+        "drone.swarm": 0.352074344507136
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_044",
+      "modules": [
+        "feed.standard",
+        "chamber.single",
+        "cooling.liquid",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 399,
+          "p50": 499,
+          "p90": 640
+        },
+        "drone.ranged": {
+          "p10": 119,
+          "p50": 200,
+          "p90": 339
+        },
+        "drone.shielded": {
+          "p10": 559,
+          "p50": 619,
+          "p90": 679
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 160,
+          "p90": 240
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 1.0,
+        "2": 0.95,
+        "3": 0.1885,
+        "4": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.33834848326542,
+        "drone.ranged": 0.166571858662549,
+        "drone.shielded": 0.136508047071207,
+        "drone.swarm": 0.358571611000824
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_045",
+      "modules": [
+        "feed.overdrive",
+        "chamber.heavy",
+        "cooling.cryo",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 89,
+          "p50": 119,
+          "p90": 239
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        },
+        "drone.shielded": {
+          "p10": 89,
+          "p50": 149,
+          "p90": 209
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.6475,
+        "2": 0.1245
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.437961846096193,
+        "drone.ranged": 0.193033614003037,
+        "drone.shielded": 0.098449094947555,
+        "drone.swarm": 0.270555444953215
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_046",
+      "modules": [
+        "feed.overdrive",
+        "chamber.rapid",
+        "cooling.fan",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 379,
+          "p50": 490,
+          "p90": 550
+        },
+        "drone.ranged": {
+          "p10": 39,
+          "p50": 160,
+          "p90": 229
+        },
+        "drone.swarm": {
+          "p10": 19,
+          "p50": 109,
+          "p90": 180
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.7945,
+        "2": 0.0365
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.307677898236823,
+        "drone.ranged": 0.216787255797254,
+        "drone.shielded": 0.0431467128729873,
+        "drone.swarm": 0.432388133092936
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_047",
+      "modules": [
+        "feed.standard",
+        "chamber.heavy",
+        "cooling.fan",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 179,
+          "p50": 269,
+          "p90": 419
+        },
+        "drone.ranged": {
+          "p10": 59,
+          "p50": 150,
+          "p90": 269
+        },
+        "drone.shielded": {
+          "p10": 179,
+          "p50": 269,
+          "p90": 389
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 150,
+          "p90": 269
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.513,
+        "2": 0.0115
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.397420675217548,
+        "drone.ranged": 0.254905560155603,
+        "drone.shielded": 0.035026324423128,
+        "drone.swarm": 0.312647440203721
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_048",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.rapid",
+        "cooling.cryo",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 720,
+          "p50": 770,
+          "p90": 950
+        },
+        "drone.ranged": {
+          "p10": 160,
+          "p50": 199,
+          "p90": 350
+        },
+        "drone.swarm": {
+          "p10": 19,
+          "p50": 160,
+          "p90": 320
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.4315,
+        "2": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.326159502593586,
+        "drone.ranged": 0.3687809561725,
+        "drone.shielded": 0.0134889875062937,
+        "drone.swarm": 0.291570553727621
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "mixed_049",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.burst",
+        "cooling.liquid",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 197,
+          "p50": 342,
+          "p90": 503
+        },
+        "drone.swarm": {
+          "p10": 23,
+          "p50": 155,
+          "p90": 318
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.093
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.305066850200023,
+        "drone.ranged": 0.304707083110108,
+        "drone.shielded": 0.0019708979708354,
+        "drone.swarm": 0.388255168719034
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "uniform_t1",
+      "modules": [
+        "feed.light",
+        "chamber.single",
+        "cooling.passive",
+        "targeting.manual"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 640,
+          "p50": 880,
+          "p90": 940
+        },
+        "drone.ranged": {
+          "p10": 180,
+          "p50": 360,
+          "p90": 620
+        },
+        "drone.swarm": {
+          "p10": 59,
+          "p50": 199,
+          "p90": 440
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.0815
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.343649150224653,
+        "drone.ranged": 0.254991209220551,
+        "drone.shielded": 0.00110959171713225,
+        "drone.swarm": 0.400250048837664
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "uniform_t2",
+      "modules": [
+        "feed.standard",
+        "chamber.rapid",
+        "cooling.fan",
+        "targeting.assisted"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 840,
+          "p50": 850,
+          "p90": 860
+        },
+        "drone.ranged": {
+          "p10": 169,
+          "p50": 330,
+          "p90": 520
+        },
+        "drone.swarm": {
+          "p10": 150,
+          "p50": 320,
+          "p90": 510
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.991,
+        "2": 0.764,
+        "3": 0.117,
+        "4": 0.0005
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.414049318122011,
+        "drone.ranged": 0.139374777480225,
+        "drone.shielded": 0.153650872277519,
+        "drone.swarm": 0.292925032120246
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "uniform_t3",
+      "modules": [
+        "feed.twin_belt",
+        "chamber.heavy",
+        "cooling.liquid",
+        "targeting.spread"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.brute": {
+          "p10": 119,
+          "p50": 179,
+          "p90": 299
+        },
+        "drone.ranged": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 150
+        },
+        "drone.shielded": {
+          "p10": 119,
+          "p50": 179,
+          "p90": 299
+        },
+        "drone.swarm": {
+          "p10": 29,
+          "p50": 59,
+          "p90": 179
+        }
+      },
+      "win_rate": 0.0
+    },
+    {
+      "clear_rate_by_depth": {
+        "1": 0.5225,
+        "2": 0.049
+      },
+      "damage_taken_share": {
+        "drone.brute": 0.443289461343671,
+        "drone.ranged": 0.26465829868384,
+        "drone.shielded": 0.0583674617813487,
+        "drone.swarm": 0.23368477819114
+      },
+      "first_choke": {
+        "chamber": 1.0
+      },
+      "id": "uniform_t4",
+      "modules": [
+        "feed.overdrive",
+        "chamber.burst",
+        "cooling.cryo",
+        "targeting.predictive"
+      ],
+      "runs": 2000,
+      "ttk_by_archetype": {
+        "drone.ranged": {
+          "p10": 162,
+          "p50": 191,
+          "p90": 318
+        },
+        "drone.swarm": {
+          "p10": 11,
+          "p50": 144,
+          "p90": 179
+        }
+      },
+      "win_rate": 0.0
+    }
+  ]
+}
