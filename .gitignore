@@ -1,0 +1,7 @@
+.godot/
+*.import
+android/build/
+build/
+reports/*.json
+!reports/.gitkeep
+.DS_Store
