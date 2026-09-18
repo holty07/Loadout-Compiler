@@ -89,10 +89,13 @@ in **Project Settings**:
 - **Display → Window → Stretch → Mode**: `canvas_items`, aspect `expand`.
 - **Display → Window → Size → Viewport Width / Height**: `1080` × `2400`. This is the
   base resolution the stretch mode scales from, matching the Pixel 6a floor device.
-- **Display → Window → Handheld → Orientation**: `sensor`. Both portrait and landscape
-  are supported and the player may rotate at any time, including mid-run. See
-  *Orientation* below — this is a layout constraint from the first scene, not a setting
-  to revisit at M6.
+- **Display → Window → Handheld → Orientation**: `Sensor`, which the editor writes to
+  `project.godot` as `window/handheld/orientation=6` — the integer enum value, not the
+  string `"sensor"`. That string is Godot 3 syntax; in Godot 4 it parses but silently
+  does nothing, so a text-editor diff review here has to check for the digit `6`, not
+  the word. Both portrait and landscape are supported and the player may rotate at any
+  time, including mid-run. See *Orientation* below — this is a layout constraint from
+  the first scene, not a setting to revisit at M6.
 - **Application → Run → Main Scene**: a placeholder empty scene for now.
 - **Debug → Settings → Stdout → Print FPS**: off.
 
@@ -283,8 +286,9 @@ real.
 - [ ] `gh auth status` clean, and a test push to a scratch branch succeeds
 - [ ] Repo cloned, directory skeleton created, `.gitignore` committed
 - [ ] `.godot-version` and `sim/VERSION` committed
-- [ ] `project.godot` configured and committed; orientation `sensor`, base viewport
-      1080 × 2400
+- [ ] `project.godot` configured and committed; orientation is
+      `window/handheld/orientation=6` (the int enum for Sensor — not the string
+      `"sensor"`), base viewport 1080 × 2400
 - [ ] Reference viewports confirmed: 1080 × 2400 portrait, 2400 × 1080 landscape
 - [ ] `CLAUDE.md` at root, `docs/plan.md` present
 - [ ] `docs/M0.md` written with M0's exit criterion stated as a command
