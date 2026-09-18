@@ -9,8 +9,6 @@ const DataLoader = preload("res://tools/data_loader.gd")
 const Run = preload("res://sim/run.gd")
 const EventLog = preload("res://sim/log.gd")
 
-const SIM_VERSION := 2
-
 func _init() -> void:
 	var args := _parse_args(OS.get_cmdline_user_args())
 	if args.get("command", "") != "run":
@@ -32,7 +30,7 @@ func _init() -> void:
 	var data := DataLoader.load_all()
 	var result := Run.execute(seed_val, module_ids, [], data)
 
-	print("sim_version=%d" % SIM_VERSION)
+	print("sim_version=%s" % FileAccess.get_file_as_string("res://sim/VERSION").strip_edges())
 	print("seed=%d" % seed_val)
 	if not result["ok"]:
 		print("log_hash=none")
