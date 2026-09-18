@@ -1,0 +1,4 @@
+{
+  "loadout_id": "fixture.basic",
+  "modules": ["placeholder.feed", "placeholder.chamber"]
+}

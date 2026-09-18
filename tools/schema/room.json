@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": ["id", "hazard_class", "depth_range", "spawn"],
+  "properties": {
+    "id": { "type": "string" },
+    "hazard_class": { "type": "string" },
+    "depth_range": { "type": "array", "items": { "type": "integer" }, "minItems": 2 },
+    "spawn": {
+      "type": "object",
+      "required": ["budget_base", "waves"],
+      "properties": {
+        "budget_base": { "type": "integer" },
+        "waves": { "type": "integer" },
+        "archetype_weights": { "type": "object" }
+      }
+    },
+    "modifier": {
+      "type": "object",
+      "properties": {
+        "heat_dissipation": { "type": "integer" }
+      }
+    }
+  }
+}
