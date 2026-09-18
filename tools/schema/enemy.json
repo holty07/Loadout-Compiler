@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "required": ["id", "hp", "armour", "speed", "threat", "behaviour", "damage"],
+  "properties": {
+    "id": { "type": "string" },
+    "hp": { "type": "integer" },
+    "armour": { "type": "integer" },
+    "speed": { "type": "integer" },
+    "threat": { "type": "integer" },
+    "behaviour": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["rush", "ranged", "shielded", "burrow", "splitter"] },
+        "engage_range": { "type": "integer" }
+      }
+    },
+    "damage": {
+      "type": "object",
+      "required": ["per_hit", "interval"],
+      "properties": {
+        "per_hit": { "type": "integer" },
+        "interval": { "type": "integer" }
+      }
+    },
+    "resist": {
+      "type": "object",
+      "properties": {
+        "kinetic": { "type": "integer" },
+        "thermal": { "type": "integer" }
+      }
+    }
+  }
+}

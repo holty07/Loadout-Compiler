@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": ["id", "slot", "tier", "name_key", "cost", "failure"],
+  "properties": {
+    "id": { "type": "string" },
+    "slot": { "type": "string", "enum": ["feed", "chamber", "cooling", "targeting"] },
+    "tier": { "type": "integer" },
+    "name_key": { "type": "string" },
+    "cost": {
+      "type": "object",
+      "required": ["power", "mass", "slots"],
+      "properties": {
+        "power": { "type": "integer" },
+        "mass": { "type": "integer" },
+        "slots": { "type": "integer" }
+      }
+    },
+    "provides": {
+      "type": "object",
+      "properties": {
+        "supply_rate": { "type": "integer" },
+        "buffer": { "type": "integer" }
+      }
+    },
+    "requires": {
+      "type": "object",
+      "properties": {
+        "power_min": { "type": "integer" }
+      }
+    },
+    "heat": {
+      "type": "object",
+      "properties": {
+        "generated": { "type": "integer" }
+      }
+    },
+    "failure": {
+      "type": "object",
+      "required": ["mode", "threshold"],
+      "properties": {
+        "mode": { "type": "string", "enum": ["starve", "jam", "overheat", "offline"] },
+        "threshold": { "type": "integer" }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "list": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

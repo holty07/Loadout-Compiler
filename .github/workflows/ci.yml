@@ -1,0 +1,75 @@
+name: CI
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: test (${{ matrix.runner }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            godot_arch: x86_64
+          - runner: ubuntu-24.04-arm
+            godot_arch: arm64
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot
+        run: |
+          set -euo pipefail
+          VERSION_STRING=$(cat .godot-version)
+          CHANNEL="${VERSION_STRING##*.}"
+          VER="${VERSION_STRING%.*}"
+          TAG="${VER}-${CHANNEL}"
+          URL="https://github.com/godotengine/godot/releases/download/${TAG}/Godot_v${TAG}_linux.${{ matrix.godot_arch }}.zip"
+          echo "Downloading $URL"
+          curl -sSL -o godot.zip "$URL"
+          unzip -q godot.zip
+          BIN=$(find . -maxdepth 1 -iname "Godot_v*" -type f)
+          chmod +x "$BIN"
+          sudo mv "$BIN" /usr/local/bin/godot
+
+      - name: Lint sim boundary
+        run: godot --headless --script tools/lint.gd
+
+      - name: Validate data
+        run: godot --headless --script tools/validate_data.gd
+
+      - name: Tests
+        run: godot --headless --script tools/run_tests.gd
+
+      - name: Determinism probe
+        run: |
+          set -euo pipefail
+          A=$(godot --headless --script harness/sim_cli.gd -- run --seed 1234 --loadout fixtures/basic.json | grep log_hash)
+          B=$(godot --headless --script harness/sim_cli.gd -- run --seed 1234 --loadout fixtures/basic.json | grep log_hash)
+          [ "$A" = "$B" ] || { echo "nondeterministic within platform"; exit 1; }
+          echo "$A" > hash-${{ matrix.runner }}.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hash-${{ matrix.runner }}
+          path: hash-${{ matrix.runner }}.txt
+
+  cross-platform-hash:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+
+      - name: Compare hashes across architectures
+        run: |
+          set -euo pipefail
+          FIRST=""
+          for f in $(find . -name "hash-*.txt"); do
+            CONTENT=$(cat "$f")
+            if [ -z "$FIRST" ]; then
+              FIRST="$CONTENT"
+            elif [ "$CONTENT" != "$FIRST" ]; then
+              echo "hash mismatch across architectures"
+              exit 1
+            fi
+          done
+          echo "all architecture hashes match: $FIRST"
