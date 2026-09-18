@@ -1,0 +1,26 @@
+id = "chamber.single"
+slot = "chamber"
+tier = 1
+name_key = "mod.chamber.single"
+
+[cost]
+power = 10
+mass = 5
+slots = 1
+
+[provides]
+cycle_interval = 20
+damage_per_round = 40
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 25
+
+[failure]
+mode = "jam"
+threshold = 3
+
+[tags]
+list = ["kinetic"]

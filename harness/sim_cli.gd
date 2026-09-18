@@ -2,15 +2,14 @@ extends SceneTree
 
 ## godot --headless --script harness/sim_cli.gd -- run --seed 1234 --loadout fixtures/basic.json
 ##
-## M0 placeholder: no game rules exist yet (pipeline/encounter/facility land
-## in M1). This still exercises Rng + EventLog + hashing end to end, so the
-## CI determinism probe has a real, reproducible hash to compare across
-## consecutive runs and across x86/ARM. Replaced by the real run loop at M1.
+## Loads /data, assembles the loadout named in the fixture JSON
+## ({"modules": [...]}), and runs it to completion via sim/run.gd.
 
-const Rng = preload("res://sim/rng.gd")
+const DataLoader = preload("res://tools/data_loader.gd")
+const Run = preload("res://sim/run.gd")
 const EventLog = preload("res://sim/log.gd")
 
-const SIM_VERSION := 1
+const SIM_VERSION := 2
 
 func _init() -> void:
 	var args := _parse_args(OS.get_cmdline_user_args())
@@ -23,26 +22,36 @@ func _init() -> void:
 	var loadout_path: String = args.get("loadout", "")
 	var verbose: bool = args.has("verbose")
 
-	var loadout := {}
+	var module_ids: Array = []
 	if loadout_path != "":
 		var json := JSON.new()
 		if json.parse(FileAccess.get_file_as_string(loadout_path)) == OK:
-			loadout = json.data
+			var spec: Dictionary = json.data
+			module_ids = spec.get("modules", [])
 
-	var rng := Rng.new(seed_val)
-	var log := EventLog.new()
-	for tick in range(100):
-		log.append(tick, "placeholder_tick", "sim", {"draw": rng.next_below(1000)})
+	var data := DataLoader.load_all()
+	var result := Run.execute(seed_val, module_ids, [], data)
 
 	print("sim_version=%d" % SIM_VERSION)
 	print("seed=%d" % seed_val)
+	if not result["ok"]:
+		print("log_hash=none")
+		print("outcome=error")
+		print("depth=0")
+		print("choke=none")
+		if verbose:
+			print("errors=%s" % str(result["errors"]))
+		quit(0)
+		return
+
+	var log: EventLog = result["log"]
 	print("log_hash=%s" % log.log_hash())
-	print("outcome=none")
-	print("depth=0")
+	print("outcome=%s" % String(result["outcome"]))
+	print("depth=%d" % int(result["depth"]))
 	print("choke=none")
 
 	if verbose:
-		print("loadout=%s" % str(loadout))
+		print("loadout=%s" % str(module_ids))
 		print("records=%d" % log.records.size())
 
 	quit(0)

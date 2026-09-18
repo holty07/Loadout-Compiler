@@ -1,0 +1,11 @@
+id = "room.intro"
+hazard_class = "skirmish"
+depth_range = [1, 2]
+
+[spawn]
+budget_base = 6
+waves = 2
+archetype_weights = { "drone.swarm" = 70, "drone.ranged" = 30 }
+
+[modifier]
+heat_dissipation = 0

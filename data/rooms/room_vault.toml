@@ -1,0 +1,11 @@
+id = "room.vault"
+hazard_class = "heavy"
+depth_range = [3, 6]
+
+[spawn]
+budget_base = 14
+waves = 2
+archetype_weights = { "drone.shielded" = 40, "drone.brute" = 60 }
+
+[modifier]
+heat_dissipation = -20

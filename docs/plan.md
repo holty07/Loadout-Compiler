@@ -1,7 +1,5 @@
 # Loadout Compiler — Build Plan & Agent Specs
 
-2026-09-18 · @Matt
-
 ## Concept and design pillars
 
 Loadout Compiler is a mobile roguelite about building a machine and then finding out whether it works. The player assembles a weapon system from modules, plots a route through a procedurally generated facility, and commits. The run executes as a deterministic simulation rendered as a top-down schematic, which the player watches and can scrub through. Death is diagnostic: the report names the module that choked and the tick it failed on.
@@ -308,7 +306,7 @@ Edit `/data`, run the sweep, compare against targets, repeat. Each tuning commit
 
 ### The limit of this method
 
-The harness measures whether the numbers work. It cannot measure whether the game is interesting. The review gate after this milestone is you reading the report and playing ten runs, not the agent declaring success.
+The harness measures whether the numbers work. It cannot measure whether the game is interesting. The review gate after this milestone is you reading the report and inspecting a handful of runs, not the agent declaring success.
 
 ## Milestones
 
@@ -328,7 +326,7 @@ The pipeline, heat and buffer model, encounter resolution, facility and route ge
 
 ### M2 — Balance harness
 
-Sweep runner, report generator, generated loadout matrix, hill-climb search.
+Sweep runner, report generator, generated loadout matrix, hill-climb search. Also a deliberately crude debug renderer (see *Testing points*) — throwaway quality, existing only so a human can watch a run before M4.
 
 **Exit:** 50 loadouts × 2,000 seeds completes in under two minutes on 8 cores, emitting a committed report artefact with win rate, TTK spread and first-choke attribution.
 
@@ -336,7 +334,7 @@ Sweep runner, report generator, generated loadout matrix, hill-climb search.
 
 Data-only iteration against the targets table. Expand content to roughly eight modules per slot and eight archetypes as the space is validated.
 
-**Exit:** every row in the targets table met, with the report committed as evidence. **Human review gate** — you read the report and play ten runs.
+**Exit:** every row in the targets table met, with the report committed as evidence. **Human review gate** — you read the report and watch runs through the debug renderer.
 
 ### M4 — Schematic shell
 
@@ -360,7 +358,7 @@ First-run tutorial, sound, haptics, readability pass, accessibility (colour-blin
 
 Store listings, screenshots, privacy policy, monetisation implementation, analytics, crash reporting, localisation extraction, beta channel.
 
-**Exit:** the checklist in the next section, fully ticked.
+**Exit:** the ship checklist, fully ticked.
 
 ### Dependency shape
 
@@ -371,6 +369,28 @@ flowchart LR
 ```
 
 M4 can begin against M1's sim while M3 tuning continues, provided the renderer is written against the event log contract rather than against current balance.
+
+## Testing points
+
+Where human time is actually required, and what each session is for. Everything not listed here is verified by CI, not by you.
+
+| Milestone | Can you play it? | What you do | Time |
+| --- | --- | --- | --- |
+| M0 | No | Nothing. Read CI output. | 0 |
+| M1 | No — CLI only | Read three event logs cold and try to say what happened in each | ~30 min |
+| M2 | Barely — debug renderer | Check the harness measures things you'd act on; watch two or three runs | ~1 hr |
+| M3 | Debug renderer only | Read the balance report against the targets table; watch ten runs | ~2 hrs |
+| M4 | Yes, spectate only | **The critical gate.** Is watching a run interesting? Decide the interventions question for real | ~3 hrs |
+| M5 | Yes, fully | Play 20–30 runs on device. Does the compile screen teach the pipeline? | several sessions |
+| M6 | Yes | Five external testers, each completing a run unaided | ~1 week elapsed |
+
+### Why the debug renderer exists
+
+Without it, the first moment anyone can watch this game is M4, which is most of the way through the build. That is far too late to discover the core loop is inert. A deliberately ugly renderer at M2 — boxes and labels, no design tokens, no polish, thrown away at M4 — buys an early read on whether the idea works. Budget a day for it and accept that it is disposable.
+
+### The M1 legibility test
+
+Read event logs as raw text and try to reconstruct what happened. If a log is illegible to you at M1, the run report at M5 will be illegible to players, because it is derived from the same records. Fixing the log's shape is cheap at M1 and expensive after golden files exist.
 
 ## Open design decisions
 

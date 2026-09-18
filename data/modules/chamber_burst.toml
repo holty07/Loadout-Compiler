@@ -1,0 +1,26 @@
+id = "chamber.burst"
+slot = "chamber"
+tier = 4
+name_key = "mod.chamber.burst"
+
+[cost]
+power = 20
+mass = 9
+slots = 1
+
+[provides]
+cycle_interval = 6
+damage_per_round = 16
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 14
+
+[failure]
+mode = "jam"
+threshold = 4
+
+[tags]
+list = ["thermal"]

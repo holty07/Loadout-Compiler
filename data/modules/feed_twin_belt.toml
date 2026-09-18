@@ -1,0 +1,26 @@
+id = "feed.twin_belt"
+slot = "feed"
+tier = 3
+name_key = "mod.feed.twin_belt"
+
+[cost]
+power = 16
+mass = 9
+slots = 1
+
+[provides]
+supply_rate = 2400
+buffer = 45
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "starve"
+threshold = 0
+
+[tags]
+list = ["belt", "mechanical"]

@@ -1,0 +1,17 @@
+id = "drone.shielded"
+hp = 90
+armour = 20
+speed = 90
+threat = 3
+
+[behaviour]
+kind = "shielded"
+engage_range = 300
+
+[damage]
+per_hit = 8
+interval = 50
+
+[resist]
+kinetic = 25
+thermal = -10

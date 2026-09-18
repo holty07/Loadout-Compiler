@@ -1,4 +1,4 @@
 {
   "loadout_id": "fixture.basic",
-  "modules": ["placeholder.feed", "placeholder.chamber"]
+  "modules": ["feed.standard", "chamber.rapid", "cooling.fan", "targeting.assisted"]
 }

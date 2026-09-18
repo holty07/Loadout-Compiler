@@ -1,0 +1,25 @@
+id = "cooling.passive"
+slot = "cooling"
+tier = 1
+name_key = "mod.cooling.passive"
+
+[cost]
+power = 4
+mass = 3
+slots = 1
+
+[provides]
+dissipation = 10
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "overheat"
+threshold = 600
+
+[tags]
+list = ["passive"]

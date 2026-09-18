@@ -1,0 +1,26 @@
+id = "chamber.heavy"
+slot = "chamber"
+tier = 3
+name_key = "mod.chamber.heavy"
+
+[cost]
+power = 22
+mass = 14
+slots = 1
+
+[provides]
+cycle_interval = 30
+damage_per_round = 75
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 45
+
+[failure]
+mode = "jam"
+threshold = 2
+
+[tags]
+list = ["kinetic"]

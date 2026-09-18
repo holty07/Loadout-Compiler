@@ -1,0 +1,26 @@
+id = "feed.light"
+slot = "feed"
+tier = 1
+name_key = "mod.feed.light"
+
+[cost]
+power = 8
+mass = 4
+slots = 1
+
+[provides]
+supply_rate = 1200
+buffer = 20
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "starve"
+threshold = 0
+
+[tags]
+list = ["belt", "mechanical"]
