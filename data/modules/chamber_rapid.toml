@@ -1,0 +1,26 @@
+id = "chamber.rapid"
+slot = "chamber"
+tier = 2
+name_key = "mod.chamber.rapid"
+
+[cost]
+power = 16
+mass = 7
+slots = 1
+
+[provides]
+cycle_interval = 10
+damage_per_round = 28
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 20
+
+[failure]
+mode = "jam"
+threshold = 3
+
+[tags]
+list = ["kinetic"]

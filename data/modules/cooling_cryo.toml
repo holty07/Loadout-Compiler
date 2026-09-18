@@ -1,0 +1,25 @@
+id = "cooling.cryo"
+slot = "cooling"
+tier = 4
+name_key = "mod.cooling.cryo"
+
+[cost]
+power = 20
+mass = 13
+slots = 1
+
+[provides]
+dissipation = 45
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "overheat"
+threshold = 1300
+
+[tags]
+list = ["active", "cryo"]

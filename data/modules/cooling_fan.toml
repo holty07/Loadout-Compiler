@@ -1,0 +1,25 @@
+id = "cooling.fan"
+slot = "cooling"
+tier = 2
+name_key = "mod.cooling.fan"
+
+[cost]
+power = 8
+mass = 5
+slots = 1
+
+[provides]
+dissipation = 18
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "overheat"
+threshold = 800
+
+[tags]
+list = ["active"]

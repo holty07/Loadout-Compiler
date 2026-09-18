@@ -1,0 +1,17 @@
+id = "drone.brute"
+hp = 150
+armour = 15
+speed = 70
+threat = 4
+
+[behaviour]
+kind = "burrow"
+engage_range = 250
+
+[damage]
+per_hit = 18
+interval = 70
+
+[resist]
+kinetic = 5
+thermal = 5

@@ -1,0 +1,26 @@
+id = "targeting.spread"
+slot = "targeting"
+tier = 3
+name_key = "mod.targeting.spread"
+
+[cost]
+power = 14
+mass = 7
+slots = 1
+
+[provides]
+targets_per_cycle = 3
+hit_chance_percent = 60
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "offline"
+threshold = 1000
+
+[tags]
+list = ["optical", "spread"]

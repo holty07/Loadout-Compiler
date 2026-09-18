@@ -1,0 +1,17 @@
+id = "drone.swarm"
+hp = 40
+armour = 0
+speed = 180
+threat = 1
+
+[behaviour]
+kind = "rush"
+engage_range = 400
+
+[damage]
+per_hit = 6
+interval = 45
+
+[resist]
+kinetic = 0
+thermal = -25

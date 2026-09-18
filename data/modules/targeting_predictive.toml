@@ -1,0 +1,26 @@
+id = "targeting.predictive"
+slot = "targeting"
+tier = 4
+name_key = "mod.targeting.predictive"
+
+[cost]
+power = 18
+mass = 8
+slots = 1
+
+[provides]
+targets_per_cycle = 2
+hit_chance_percent = 90
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "offline"
+threshold = 1100
+
+[tags]
+list = ["optical", "predictive"]

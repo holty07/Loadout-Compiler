@@ -1,0 +1,26 @@
+id = "targeting.assisted"
+slot = "targeting"
+tier = 2
+name_key = "mod.targeting.assisted"
+
+[cost]
+power = 10
+mass = 5
+slots = 1
+
+[provides]
+targets_per_cycle = 1
+hit_chance_percent = 85
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "offline"
+threshold = 1000
+
+[tags]
+list = ["optical", "assisted"]

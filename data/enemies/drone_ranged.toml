@@ -1,0 +1,17 @@
+id = "drone.ranged"
+hp = 55
+armour = 5
+speed = 120
+threat = 2
+
+[behaviour]
+kind = "ranged"
+engage_range = 900
+
+[damage]
+per_hit = 10
+interval = 60
+
+[resist]
+kinetic = 10
+thermal = 0

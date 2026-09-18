@@ -1,0 +1,11 @@
+id = "room.gauntlet"
+hazard_class = "swarm"
+depth_range = [1, 6]
+
+[spawn]
+budget_base = 12
+waves = 4
+archetype_weights = { "drone.swarm" = 50, "drone.ranged" = 25, "drone.brute" = 25 }
+
+[modifier]
+heat_dissipation = 0

@@ -19,7 +19,12 @@
       "type": "object",
       "properties": {
         "supply_rate": { "type": "integer" },
-        "buffer": { "type": "integer" }
+        "buffer": { "type": "integer" },
+        "cycle_interval": { "type": "integer" },
+        "damage_per_round": { "type": "integer" },
+        "dissipation": { "type": "integer" },
+        "targets_per_cycle": { "type": "integer" },
+        "hit_chance_percent": { "type": "integer" }
       }
     },
     "requires": {

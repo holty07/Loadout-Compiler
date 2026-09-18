@@ -1,0 +1,24 @@
+[sim]
+tick_rate = 60
+max_ticks_per_room = 20000
+
+[facility]
+room_count = 6
+
+[loadout]
+power_budget = 90
+mass_budget = 60
+slot_budget = 8
+
+[player]
+integrity_max = 250
+
+[threat]
+depth_step = 2
+
+[penalties]
+jam_offline_ticks = 120
+cooling_offline_ticks = 200
+
+[interventions]
+budget = 3

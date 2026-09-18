@@ -1,0 +1,26 @@
+id = "feed.overdrive"
+slot = "feed"
+tier = 4
+name_key = "mod.feed.overdrive"
+
+[cost]
+power = 22
+mass = 12
+slots = 1
+
+[provides]
+supply_rate = 3200
+buffer = 60
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "starve"
+threshold = 0
+
+[tags]
+list = ["belt", "mechanical", "overdrive"]

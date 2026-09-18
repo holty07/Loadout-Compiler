@@ -1,0 +1,25 @@
+id = "cooling.liquid"
+slot = "cooling"
+tier = 3
+name_key = "mod.cooling.liquid"
+
+[cost]
+power = 14
+mass = 10
+slots = 1
+
+[provides]
+dissipation = 30
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "overheat"
+threshold = 1000
+
+[tags]
+list = ["active"]

@@ -1,0 +1,26 @@
+id = "feed.standard"
+slot = "feed"
+tier = 2
+name_key = "mod.feed.standard"
+
+[cost]
+power = 12
+mass = 6
+slots = 1
+
+[provides]
+supply_rate = 1800
+buffer = 30
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "starve"
+threshold = 0
+
+[tags]
+list = ["belt", "mechanical"]

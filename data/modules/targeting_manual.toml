@@ -1,0 +1,26 @@
+id = "targeting.manual"
+slot = "targeting"
+tier = 1
+name_key = "mod.targeting.manual"
+
+[cost]
+power = 6
+mass = 4
+slots = 1
+
+[provides]
+targets_per_cycle = 1
+hit_chance_percent = 70
+
+[requires]
+power_min = 0
+
+[heat]
+generated = 0
+
+[failure]
+mode = "offline"
+threshold = 900
+
+[tags]
+list = ["optical"]

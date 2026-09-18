@@ -1,0 +1,11 @@
+id = "room.choke"
+hazard_class = "attrition"
+depth_range = [2, 4]
+
+[spawn]
+budget_base = 10
+waves = 3
+archetype_weights = { "drone.swarm" = 40, "drone.ranged" = 30, "drone.shielded" = 30 }
+
+[modifier]
+heat_dissipation = -10
