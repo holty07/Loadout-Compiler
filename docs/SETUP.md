@@ -27,10 +27,33 @@ godot --version   # record this in .godot-version
 
 ## 2. Repo bootstrap
 
-```bash
-git clone git@github.com:holty07/loadout-compiler.git
-cd loadout-compiler
+Clone with `gh` so it uses whichever protocol your `gh auth login` already configured:
 
+```bash
+gh repo clone holty07/loadout-compiler
+cd loadout-compiler
+```
+
+`gh auth login` sets up HTTPS credentials by default. If you want SSH instead, set it up
+first — `gh auth login` alone does not create or register an SSH key:
+
+```bash
+ssh-keygen -t ed25519 -C "you@example.com"
+gh auth refresh -h github.com -s admin:public_key
+gh ssh-key add ~/.ssh/id_ed25519.pub --title "$(hostname)"
+gh config set git_protocol ssh
+ssh -T git@github.com    # accept the host key by typing the full word: yes
+```
+
+On the first SSH connection you will be asked to verify GitHub's host key fingerprint.
+Check it against the current values published at
+<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints>
+and answer `yes` — anything else, including a bare Enter, aborts with
+`Host key verification failed`.
+
+Then create the directory skeleton:
+
+```bash
 mkdir -p sim data/{modules,enemies,rooms} harness shell tests tools/schema docs \
          fixtures reports .github/workflows
 
@@ -257,6 +280,7 @@ real.
 
 ## 8. Session zero checklist
 
+- [ ] `gh auth status` clean, and a test push to a scratch branch succeeds
 - [ ] Repo cloned, directory skeleton created, `.gitignore` committed
 - [ ] `.godot-version` and `sim/VERSION` committed
 - [ ] `project.godot` configured and committed; orientation `sensor`, base viewport
