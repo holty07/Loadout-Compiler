@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c9n1debugrender"]
+
+[ext_resource type="Script" path="res://harness/debug_renderer.gd" id="1"]
+
+[node name="DebugRenderer" type="Control"]
+script = ExtResource("1")

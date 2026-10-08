@@ -34,6 +34,7 @@ static func resolve_room(
 	var weights: Dictionary = spawn.get("archetype_weights", {})
 	var dissipation_modifier := int(room.get("modifier", {}).get("heat_dissipation", 0))
 	var max_ticks := int(tuning.get("sim", {}).get("max_ticks_per_room", 20000))
+	var penalties: Dictionary = tuning.get("penalties", {})
 
 	var active_enemies: Array = []
 	var waves_spawned := 0
@@ -43,9 +44,8 @@ static func resolve_room(
 
 	while true:
 		if active_enemies.is_empty() and waves_spawned < waves_total:
-			active_enemies = _spawn_wave(rng, enemies_by_id, weights, per_wave_budget, tick)
 			waves_spawned += 1
-			log.append(tick, "spawn", room.get("id", "room"), {"wave": waves_spawned, "count": active_enemies.size()})
+			active_enemies = _spawn_wave(rng, enemies_by_id, weights, per_wave_budget, tick, waves_spawned, log)
 
 		if active_enemies.is_empty() and waves_spawned >= waves_total:
 			break
@@ -53,7 +53,7 @@ static func resolve_room(
 		if interventions_by_tick.has(tick):
 			_apply_intervention(pipeline_state, String(interventions_by_tick[tick]), log, tick)
 
-		var fire_result := Pipeline.step(pipeline_state, tick, dissipation_modifier, tuning, log)
+		var fire_result := Pipeline.step(pipeline_state, tick, dissipation_modifier, penalties, log)
 		if fire_result.get("fired", false):
 			_resolve_targeting(fire_result, active_enemies, rng, log, tick)
 			active_enemies = active_enemies.filter(func(e): return int(e["hp"]) > 0)
@@ -76,7 +76,12 @@ static func resolve_room(
 
 	return {"player_integrity": player_integrity, "died": died, "next_tick": tick}
 
-static func _spawn_wave(rng: Rng, enemies_by_id: Dictionary, weights: Dictionary, budget: int, tick: int) -> Array:
+## Enemy instance ids are "<archetype>@<spawn_tick>#<index>" — unique across
+## the whole run (tick strictly increases, never resets per room or wave),
+## and self-describing: a report can recover archetype and spawn tick from
+## the id alone without needing to correlate a separate spawn record, which
+## is what makes time-to-kill computable straight from "kill" events.
+static func _spawn_wave(rng: Rng, enemies_by_id: Dictionary, weights: Dictionary, budget: int, tick: int, wave: int, log: EventLog) -> Array:
 	var result: Array = []
 	if weights.is_empty():
 		return result
@@ -106,12 +111,14 @@ static func _spawn_wave(rng: Rng, enemies_by_id: Dictionary, weights: Dictionary
 		var def: Dictionary = enemies_by_id[chosen_id]
 		var threat: int = max(1, int(def.get("threat", 1)))
 		var interval: int = max(1, int(def.get("damage", {}).get("interval", 1)))
+		var instance_id := "%s@%d#%d" % [chosen_id, tick, result.size()]
 		result.append({
-			"id": "%s#%d" % [chosen_id, result.size()],
+			"id": instance_id,
 			"def": def,
 			"hp": int(def.get("hp", 1)),
 			"next_attack_tick": tick + interval,
 		})
+		log.append(tick, "spawn", instance_id, {"archetype": chosen_id, "wave": wave})
 		remaining -= threat
 	return result
 

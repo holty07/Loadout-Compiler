@@ -14,7 +14,9 @@ const Facility = preload("res://sim/facility.gd")
 const Pipeline = preload("res://sim/pipeline.gd")
 const Encounter = preload("res://sim/encounter.gd")
 
-static func execute(seed_val: int, module_ids: Array, interventions: Array, data: Dictionary) -> Dictionary:
+## sparse_log=true trades full event detail for speed (see
+## EventLog.SparseEventLog) — only harness/sweep.gd should ever pass true.
+static func execute(seed_val: int, module_ids: Array, interventions: Array, data: Dictionary, sparse_log: bool = false) -> Dictionary:
 	var tuning: Dictionary = data.get("tuning", {})
 	var modules_by_id: Dictionary = data.get("modules", {})
 	var enemies_by_id: Dictionary = data.get("enemies", {})
@@ -33,7 +35,7 @@ static func execute(seed_val: int, module_ids: Array, interventions: Array, data
 	if not route["ok"]:
 		return {"ok": false, "errors": route["errors"]}
 
-	var log := EventLog.new()
+	var log: EventLog = EventLog.SparseEventLog.new() if sparse_log else EventLog.new()
 	var pipeline_state := Pipeline.new_state(assembled["modules"])
 	var player_integrity := int(tuning.get("player", {}).get("integrity_max", 1))
 	var interventions_by_tick: Dictionary = iv["by_tick"]
